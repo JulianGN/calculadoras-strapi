@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calculadoras",
+  "info": {
+    "singularName": "calculadora",
+    "pluralName": "calculadoras",
+    "displayName": "Calculadora",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "calculadoras"
+    },
+    "descricao": {
+      "type": "text"
+    }
+  }
+}
