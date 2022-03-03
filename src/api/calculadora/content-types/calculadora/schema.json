@@ -16,14 +16,6 @@
       "type": "string",
       "required": true
     },
-    "imagem": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "nome": {
       "type": "string",
       "required": true
@@ -36,6 +28,9 @@
     },
     "descricao": {
       "type": "text"
+    },
+    "imagem": {
+      "type": "string"
     }
   }
 }
